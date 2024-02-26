@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "@/styles/cosmos/components/image.module.scss";
+import styles from "@/styles/cosmos/components/primaryImage.module.scss";
 import DummyImg from '@/public/image/dummy/primaryPhoto.jpg'; //TODO: Delete DummyImg
 import Image from "next/image";
 import { useEffect, useRef } from "react";

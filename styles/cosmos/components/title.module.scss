@@ -31,6 +31,10 @@
     }
 }
 
+.loginButton {
+
+}
+
 .button {
     height: 40px;
     padding: 0px 17px;
@@ -45,4 +49,17 @@
 
     border: 0;
     background-color: $color-primary;
+
+    cursor: pointer;
+}
+
+.loginButton {
+    @extend .button;
+
+    margin-left: 10px;
+
+    color: $color-primary;
+    background-color: $color-white;
+
+    border: 1.5px solid $color-border;
 }
