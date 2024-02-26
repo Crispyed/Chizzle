@@ -1,0 +1,78 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+    min-height: calc(100vh - 40px);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 330px;
+
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 26px;
+    font-family: $font-wanted;
+    font-weight: 600;
+    letter-spacing: -.5px;
+    margin-bottom: 20px;
+}
+
+.label {
+    margin: 0 10px;
+
+    font-family: $font-wanted;
+    font-size: 13px;
+
+    color: $color-gray;
+}
+
+.input {
+    width: calc(100% - 20px);
+    max-width: 325px;
+
+    margin: 0 10px 15px 10px;
+
+    height: 50px;
+
+    border: 0;
+    border-bottom: 1.5px solid $color-border;
+
+    transition: .2s all ease-in-out;
+
+    font-family: $font-wanted;
+    font-size: 14px;
+
+    &:focus {
+        border-bottom: 1.5px solid $color-primary;
+        outline: none;
+    }
+}
+
+.button {
+    height: 45px;
+    width: calc(100% - 20px);
+    max-width: 330px;
+
+    margin: 10px 10px 0 10px;
+
+    border: 1px;
+
+    background-color: $color-primary;
+    color: $color-white;
+
+    font-family: $font-wanted;
+    font-size: 12px;
+    font-weight: 500;
+}
