@@ -1,8 +1,12 @@
+'use client'
+
 import CosmosPageTitle from "@/components/cosmos/title";
 import styles from "@/styles/cosmos/detail/page.module.scss";
 import Image from "next/image";
 import dummy from '@/public/image/dummy/photo_1.jpg';
 import CosmosPageProfile from "@/components/cosmos/profile";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 function CameraDetail() {
     return (
@@ -16,6 +20,14 @@ function CameraDetail() {
 }
 
 export default function CosmosDetailImage({ params }: { params: { username: string } }) {
+    useEffect(() => {
+        gsap.to('.redirectAnimationContainer', {
+            height: '0vh',
+            duration: 1.5,
+            delay: .10,
+            ease: "power2.out",
+        })
+    }, [])
     return (
         <main className={styles.container}>
             <CosmosPageTitle slug={params.username} />
@@ -41,6 +53,7 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
                 </div>
             </section>
             <CosmosPageProfile />
+            <div className="redirectAnimationContainer" style={{ height: '100vh', top: 'auto', bottom: 0 }}/>
         </main>
     );
 }
