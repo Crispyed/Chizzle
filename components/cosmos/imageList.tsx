@@ -28,7 +28,7 @@ function ImageComponent({ src, title, slug, id }: ImageComponentProps) {
             height: '100vh',
             duration: 1.1,
             delay: .10,
-            ease: CustomEase.create("custom", "M0,0 C0.088,0 1,0.598 1,1.004 "),
+            ease: "power2.out",
         }).then(() => {
             router.push(`${slug}/${id}`)
         })
