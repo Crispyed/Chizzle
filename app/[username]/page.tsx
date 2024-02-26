@@ -10,7 +10,7 @@ export default function UserCosmos({ params }: { params: { username: string } })
             <CosmosPageTitle slug={params.username} />
             <CosmosPrimaryImage />
             <CosmosPageProfile />
-            <CosmosPageImageList />
+            <CosmosPageImageList slug={params.username} />
         </main>
     );
 }

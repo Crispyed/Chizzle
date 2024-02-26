@@ -32,7 +32,9 @@ export default function RootLayout({
                 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
                 <meta name="theme-color" content="#ffffff"/>
             </head>
-            <body>{children}</body>
+            <body className="body">
+                {children}
+            </body>
         </html>
     );
 }

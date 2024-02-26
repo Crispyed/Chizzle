@@ -1,0 +1,47 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+    padding: 0 20px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.imageContainer {
+    width: calc(100% - 350px);
+    max-width: 1000px;
+
+    margin-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.imageTypeContainer {
+    width: fit-content;
+    padding: 5px 10px;
+
+    border: 1px solid $color-border;
+    border-radius: 6px;
+
+    background-color: $color-background-hover;
+    color: $color-gray;
+
+    font-family: $font-wanted;
+    font-weight: 500;
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.imageName {
+    margin: 0;
+
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 600;
+    letter-spacing: -.5px;
+}

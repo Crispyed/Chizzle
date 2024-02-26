@@ -31,10 +31,6 @@
     }
 }
 
-.loginButton {
-
-}
-
 .button {
     height: 40px;
     padding: 0px 17px;
@@ -51,6 +47,7 @@
     background-color: $color-primary;
 
     cursor: pointer;
+    transition: .2s all ease-in-out;
 }
 
 .loginButton {
@@ -62,4 +59,8 @@
     background-color: $color-white;
 
     border: 1.5px solid $color-border;
+
+    &:hover {
+        background-color: $color-background-hover;
+    }
 }
