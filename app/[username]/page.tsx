@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "@/styles/page.module.css";
+import styles from "@/styles/cosmos/page.module.scss";
+import CosmosPageTitle from "./cosmos/pageTitle";
 
-export default function UserCosmos() {
+export default function UserCosmos({ params }: { params: { username: string } }) {
     return (
         <main className={styles.container}>
-            This is User Cosmos Pages
+            <CosmosPageTitle slug={params.username} />
         </main>
     );
 }
