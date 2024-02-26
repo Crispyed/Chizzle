@@ -1,0 +1,10 @@
+$font-lora: "Lora", serif;
+$font-wanted: "Wanted Sans KR";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
