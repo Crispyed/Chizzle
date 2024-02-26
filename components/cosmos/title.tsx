@@ -24,9 +24,12 @@ export default function CosmosPageTitle({ slug }: { slug: string }) {
         })
     }, [])
     return (
-        <main className={styles.container}>
-            <h1 className={styles.title} ref={titleTopRef}><strong>{slug}</strong>'s</h1>
-            <h1 className={styles.title} ref={titleBottomRef}>Cosmos</h1>
-        </main>
+        <header className={styles.container}>
+            <div className={styles.titleContainer}>
+                <h1 className={styles.title} ref={titleTopRef}><strong>{slug}</strong>'s</h1>
+                <h1 className={styles.title} ref={titleBottomRef}>Cosmos</h1>
+            </div>
+            <button className={styles.button}>Make Own Cosmos!</button>
+        </header>
     );
 }

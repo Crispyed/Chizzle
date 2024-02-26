@@ -5,9 +5,9 @@
     width: 100%;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     text-align: left;
 }
@@ -29,4 +29,20 @@
         color: $color-black;
         font-weight: 500;
     }
+}
+
+.button {
+    height: 40px;
+    padding: 0px 17px;
+
+    color: $color-white;
+
+    font-family: $font-wanted;
+    font-weight: 300;
+    font-size: 16px;
+
+    border-radius: $radius-m;
+
+    border: 0;
+    background-color: $color-primary;
 }

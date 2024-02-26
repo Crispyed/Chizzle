@@ -3,7 +3,7 @@
 import styles from "@/styles/cosmos/components/image.module.scss";
 import DummyImg from '@/public/image/dummy/primaryPhoto.jpg'; //TODO: Delete DummyImg
 import Image from "next/image";
-import { use, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function CosmosPrimaryImage() {
