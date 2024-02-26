@@ -11,7 +11,6 @@ import dummy_6 from '@/public/image/dummy/photo_6.jpg';
 import dummy_7 from '@/public/image/dummy/photo_7.jpg';
 import dummy_8 from '@/public/image/dummy/photo_8.jpg';
 import gsap from "gsap";
-import CustomEase from "gsap/CustomEase";
 import { useRouter } from "next/navigation";
 
 interface ImageComponentProps {
