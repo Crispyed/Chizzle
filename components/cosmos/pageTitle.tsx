@@ -1,0 +1,31 @@
+"use client"
+
+import styles from "@/styles/cosmos/components/title.module.scss";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+
+export default function CosmosPageTitle({ slug }: { slug: string }) {
+    const titleTopRef = useRef<HTMLHeadingElement>(null);
+    const titleBottomRef = useRef<HTMLHeadingElement>(null);
+    useEffect(() => {
+        gsap.registerPlugin()
+        gsap.fromTo(titleTopRef.current, { y: 50, opacity: 0 }, {
+            y: 0,
+            opacity: 1,
+            duration: .35,
+            delay: .10,
+        })
+        gsap.fromTo(titleBottomRef.current, { y: 80, opacity: 0 }, {
+            y: 0,
+            opacity: 1,
+            duration: .35,
+            delay: .25,
+        })
+    }, [])
+    return (
+        <main className={styles.container}>
+            <h1 className={styles.title} ref={titleTopRef}><strong>{slug}</strong>'s</h1>
+            <h1 className={styles.title} ref={titleBottomRef}>Cosmos</h1>
+        </main>
+    );
+}

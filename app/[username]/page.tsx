@@ -1,5 +1,5 @@
 import styles from "@/styles/cosmos/page.module.scss";
-import CosmosPageTitle from "./cosmos/pageTitle";
+import CosmosPageTitle from "../../components/cosmos/pageTitle";
 
 export default function UserCosmos({ params }: { params: { username: string } }) {
     return (
