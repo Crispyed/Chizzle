@@ -1,0 +1,74 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: left;
+}
+
+.title {
+    font-family: $font-lora;
+    font-weight: 500;
+
+    font-size: 31px;
+    line-height: 30px;
+
+    margin: 0;
+
+    color: $color-text-transparent;
+
+    strong {
+        color: $color-black;
+        font-weight: 500;
+    }
+}
+
+.titleContainer {
+    text-decoration: none;
+    
+    cursor: pointer;
+}
+
+.button {
+    height: 40px;
+    padding: 0px 17px;
+
+    color: $color-white;
+
+    font-family: $font-wanted;
+    font-weight: 300;
+    font-size: 16px;
+
+    border-radius: $radius-m;
+
+    border: 0;
+    background-color: $color-primary;
+
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.loginButton {
+    @extend .button;
+
+    padding: 9px 17px;
+
+    text-decoration: none;
+
+    margin-left: 10px;
+
+    color: $color-primary;
+    background-color: $color-white;
+
+    border: 1.5px solid $color-border;
+
+    &:hover {
+        background-color: $color-background-hover;
+    }
+}

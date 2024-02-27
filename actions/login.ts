@@ -1,11 +1,15 @@
 'use server'
 
+import { emailRegex } from "@/lib/regex";
 import { createClient } from "@/lib/supabase/server"
-import { Toast } from "@/lib/toast";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
-export async function loginAction(formData: FormData) {
+export type FormState = {
+    message: string,
+}
+
+export async function loginAction(prevState: FormState, formData: FormData) {
     const supabase = createClient();
 
     const data = {
@@ -13,12 +17,22 @@ export async function loginAction(formData: FormData) {
         password: formData.get('password') as string,
     }
 
+    if(!emailRegex.test(data.email)) return {
+        message: 'Email is incorrectly formatted'
+    }
+
+    if(data.password.length < 8) return {
+        message: 'Email is incorrectly formatted'
+    }
+
     const { error } = await supabase.auth.signInWithPassword(data);
 
     if (error) {
-        Toast({ type: 'error', text: 'Invalid login credentials' })
+        return {
+            message: 'Invalid login credentials',
+        }
+    } else {
+        revalidatePath('/', 'layout')
+        redirect('/')
     }
-    
-      revalidatePath('/', 'layout')
-      redirect('/')
 }

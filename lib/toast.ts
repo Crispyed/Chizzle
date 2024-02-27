@@ -1,11 +1,6 @@
 import { toast } from "react-toastify";
 
-interface ToastProps {
-    type: "success" | "error" | "info" | "warning";
-    text: string;
-}
-
-export function Toast({ type, text }: ToastProps) {
+export function Toast(type: string, text: string) {
     switch (type) {
         case "success":
             toast.success(text, {
