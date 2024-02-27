@@ -31,8 +31,8 @@ export default function CosmosPageHeader({ slug }: { slug: string }) {
                 <h1 className={styles.title} ref={titleBottomRef}>Cosmos</h1>
             </Link>
             <div>
-                <button className={styles.button}>Make Own Cosmos!</button>
-                <Link href={'/login'} className={styles.loginButton}>Login</Link>
+                <button className={styles.button}>나만의 코스모스 만들기</button>
+                <Link href={'/login'} className={styles.loginButton}>로그인</Link>
             </div>
         </header>
     );

@@ -9,7 +9,7 @@ export default function CosmosPageProfile() {
     return (
         <section className={styles.container}>
             <div className={styles.article}>
-                <span className={styles.title}>ABOUT ME</span>
+                <span className={styles.title}>소개글</span>
                 <h3 className={styles.description}>Hello, my name is Taeuk, and I am a photographer who takes pictures of the world.</h3>
                 <div className={styles.snsContainer}>
                     <CosmosPageProfileSNS
