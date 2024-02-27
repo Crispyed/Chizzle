@@ -75,4 +75,19 @@
     font-family: $font-wanted;
     font-size: 12px;
     font-weight: 500;
+
+    &:disabled {
+        background-color: $color-text-transparent;
+        color: $color-gray;
+    }
+}
+
+.href {
+    margin: 0 auto;
+    margin-top: 20px;
+
+    font-family: $font-wanted;
+    font-size: 14px;
+    color: $color-primary;
+    text-decoration: none;
 }

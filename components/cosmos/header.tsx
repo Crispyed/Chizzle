@@ -1,10 +1,11 @@
 "use client"
 
-import styles from "@/styles/cosmos/components/title.module.scss";
+import styles from "@/styles/cosmos/components/header.module.scss";
 import gsap from "gsap";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
-export default function CosmosPageTitle({ slug }: { slug: string }) {
+export default function CosmosPageHeader({ slug }: { slug: string }) {
     const titleTopRef = useRef<HTMLHeadingElement>(null);
     const titleBottomRef = useRef<HTMLHeadingElement>(null);
     
@@ -31,7 +32,7 @@ export default function CosmosPageTitle({ slug }: { slug: string }) {
             </div>
             <div>
                 <button className={styles.button}>Make Own Cosmos!</button>
-                <button className={styles.loginButton}>Login</button>
+                <Link href={'/login'} className={styles.loginButton}>Login</Link>
             </div>
         </header>
     );

@@ -1,6 +1,6 @@
 'use client'
 
-import CosmosPageTitle from "@/components/cosmos/title";
+import CosmosPageTitle from "@/components/cosmos/header";
 import styles from "@/styles/cosmos/detail/page.module.scss";
 import Image from "next/image";
 import dummy from '@/public/image/dummy/photo_1.jpg';
@@ -23,7 +23,7 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
     useEffect(() => {
         gsap.to('.redirectAnimationContainer', {
             height: '0vh',
-            duration: 1.5,
+            duration: 1,
             delay: .10,
             ease: "power2.out",
         })

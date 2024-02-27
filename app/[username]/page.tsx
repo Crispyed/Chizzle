@@ -1,5 +1,5 @@
 import styles from "@/styles/cosmos/page.module.scss";
-import CosmosPageTitle from "../../components/cosmos/title";
+import CosmosPageTitle from "../../components/cosmos/header";
 import CosmosPrimaryImage from "@/components/cosmos/primaryImage";
 import CosmosPageProfile from "@/components/cosmos/profile";
 import CosmosPageImageList from "@/components/cosmos/imageList";

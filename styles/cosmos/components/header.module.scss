@@ -57,6 +57,10 @@
 .loginButton {
     @extend .button;
 
+    padding: 9px 17px;
+
+    text-decoration: none;
+
     margin-left: 10px;
 
     color: $color-primary;
