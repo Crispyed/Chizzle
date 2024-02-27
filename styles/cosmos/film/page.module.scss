@@ -1,0 +1,42 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+    font-family: $font-ibm;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+
+    background-color: $color-background-hover;
+    color: $color-gray;
+
+    border-radius: 6px;
+
+    padding: 5px 10px;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.photoCount {
+    color: $color-gray;
+    font-family: $font-ibm;
+}

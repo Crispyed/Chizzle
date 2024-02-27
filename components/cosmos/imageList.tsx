@@ -29,7 +29,7 @@ function ImageComponent({ src, title, slug, id }: ImageComponentProps) {
             delay: .10,
             ease: "power2.out",
         }).then(() => {
-            router.push(`${slug}/p/${id}`)
+            router.push(`/${slug}/p/${id}`)
         })
     }
 
