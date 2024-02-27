@@ -7,6 +7,7 @@ import dummy from '@/public/image/dummy/photo_1.jpg';
 import CosmosPageProfile from "@/components/cosmos/profile";
 import { useEffect } from "react";
 import gsap from "gsap";
+import Link from "next/link";
 
 function CameraDetail() {
     return (
@@ -20,6 +21,8 @@ function CameraDetail() {
 }
 
 export default function CosmosDetailImage({ params }: { params: { username: string } }) {
+    const camera = 'Canon EOS 600D';
+    const film = 'Kodak Portra 400';
     useEffect(() => {
         gsap.to('.redirectAnimationContainer', {
             height: '0vh',
@@ -42,14 +45,19 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
                 <div className={styles.imageDetailContainer}>
                     <div className={styles.imageTypeContainer}>PHOTO</div>
                     <h1 className={styles.imageName}>이미지 이름</h1>
-                    <div style={{ height: '20px'}}/>
-                    <span  className={styles.imageDetail}>2982x1829</span>
+                    <div style={{ height: '15px'}}/>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <Link href={`/${params.username}/camera/${camera}`} className={`${styles.imageDetail} ${styles.cameraName}`}>{camera}</Link>
+                        <Link href={`/${params.username}/film/${film}`} className={`${styles.imageDetail} ${styles.cameraFilm}`}>{film}</Link>
+                    </div>
+                    <div style={{ height: '10px'}}/>
+                    <span className={styles.imageDetail}>2982x1829</span>
                     <div style={{ height: '10px'}}/>
                     <CameraDetail />
                     <div style={{ height: '15px'}}/>
-                    <span  className={styles.imageDetail}>2024/03/23 18:32PM</span>
+                    <span className={styles.imageDetail}>2024/03/23 18:32PM</span>
                     <div style={{ height: '30px'}}/>
-                    <span  className={styles.imageDetail}>1,920 Views</span>
+                    <span className={styles.imageDetail}>1,920 Views</span>
                 </div>
             </section>
             <CosmosPageProfile />

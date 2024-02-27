@@ -47,6 +47,32 @@
 }
 
 
+.cameraName, .cameraFilm {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+
+        color: $color-black;
+
+        cursor: pointer;
+    }
+}
+
+.cameraFilm {
+    background-color: $color-background-hover;
+    color: $color-gray;
+
+    border: 1px solid $color-border;
+    border-radius: 6px;
+
+    padding: 3px 5px;
+
+    font-size: 12px !important;
+    font-weight: 500;
+
+    margin-left: 10px;
+}
+
 .cameraDetailWrap {
     display: flex;
     flex-direction: column;

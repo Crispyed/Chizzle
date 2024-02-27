@@ -26,10 +26,10 @@ export default function CosmosPageHeader({ slug }: { slug: string }) {
     }, [])
     return (
         <header className={styles.container}>
-            <div className={styles.titleContainer}>
+            <Link href={`/${slug}`} className={styles.titleContainer}>
                 <h1 className={styles.title} ref={titleTopRef}><strong>{slug}</strong>'s</h1>
                 <h1 className={styles.title} ref={titleBottomRef}>Cosmos</h1>
-            </div>
+            </Link>
             <div>
                 <button className={styles.button}>Make Own Cosmos!</button>
                 <Link href={'/login'} className={styles.loginButton}>Login</Link>
