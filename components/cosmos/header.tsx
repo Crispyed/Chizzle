@@ -1,7 +1,5 @@
 import styles from "@/styles/cosmos/components/header.module.scss";
 import Link from "next/link";
-import Logo from "@/public/logo.svg";
-import Image from "next/image";
 import CosmosLogo from "../logo";
 
 export default function CosmosPageHeader({ slug }: { slug: string }) {

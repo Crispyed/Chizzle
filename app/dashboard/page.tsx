@@ -1,10 +1,11 @@
 import DashboardHeader from "@/components/dashboard/header";
-import Image from "next/image";
+import DashboardTab from "@/components/dashboard/tab/tab";
 
-export default function Home({ params }: { params: { username: string } }) {
+export default function Home() {
     return (
         <main>
-            <DashboardHeader slug={params.username} />
+            <DashboardHeader />
+            <DashboardTab />
         </main>
     );
 }

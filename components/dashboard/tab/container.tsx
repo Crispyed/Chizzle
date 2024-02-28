@@ -2,15 +2,15 @@
 
 import styles from "@/styles/cosmos/components/tab/container.module.scss";
 import { useRecoilState } from "recoil";
-import { cosmosProfileTab } from "@/states/cosmosProfileTab";
+import { DashboardTabState } from "@/states/dashboardTab";
 
-interface CosmosProfileTabContainerProps {
+interface DashboardTabContainerProps {
     stateName: string;
     children?: React.ReactNode;
 }
 
-export default function CosmosProfileTabContainer({ stateName, children }: CosmosProfileTabContainerProps) {
-    const [tab, setTab] = useRecoilState(cosmosProfileTab)
+export default function DashboardTabContainer({ stateName, children }: DashboardTabContainerProps) {
+    const [tab, setTab] = useRecoilState(DashboardTabState)
     return (
         <div className={styles.container} data-visible={stateName === tab}>
             {children}
