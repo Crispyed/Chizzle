@@ -18,8 +18,8 @@ export default function DashboardTab() {
                 <GoHomeFill />
                 <span>홈</span>
             </div>
-            <div className={styles.tabItem} data-selected={tab === 'photo'} onClick={() => {
-                setTab('photo')
+            <div className={styles.tabItem} data-selected={tab === 'post'} onClick={() => {
+                setTab('post')
             }}>
                 <LuLayoutDashboard />
                 <span>게시물 관리</span>

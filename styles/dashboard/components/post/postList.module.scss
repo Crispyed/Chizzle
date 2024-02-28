@@ -1,0 +1,113 @@
+@import '@/styles/variables.module.scss';
+
+.listContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 15px;
+
+    border: 1px solid $color-border;
+    border-radius: 12px;
+
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+.left {
+    display: flex;
+}
+
+.listImage {
+    width: 110px;
+    height: 70px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+}
+
+.listData {
+    margin-left: 17px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    margin-top: 6px;
+
+    display: flex;
+    align-items: center;
+}
+
+.listTitle {
+    font-family: $font-wanted;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.postType {
+    height: fit-content;
+
+    padding: 3px 6px;
+
+    border-radius: 4px;
+
+    font-family: $font-wanted;
+    font-size: 13px;
+
+    margin-left: 7px;
+
+    color: $color-gray;
+
+    background-color: $color-background-hover;
+}
+
+.listDetailContainer {
+    display: flex;
+    align-items: center;
+
+    color: $color-gray;
+    
+    font-family: $font-wanted;
+    font-size: 14px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    margin-right: 10px;
+
+    svg {
+        width: 12px;
+        height: 12px;
+
+        margin-right: 5px;
+    }
+}
+
+.listDetailContainer:hover {
+    &[data-underline="true"] {
+        text-decoration: underline;
+    }
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: $color-gray-dark;
+
+    &:hover {
+        background: $color-background-hover;
+    }
+}

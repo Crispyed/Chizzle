@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "@/styles/cosmos/components/tab/container.module.scss";
+import styles from "@/styles/dashboard/components/tab/container.module.scss";
 import { useRecoilState } from "recoil";
 import { DashboardTabState } from "@/states/dashboardTab";
 
