@@ -5,6 +5,7 @@ import Youtube from '@/public/svg/youtube.svg';
 import Instagram from '@/public/svg/instagram.svg';
 import CosmosPageProfileSNS from "./sns";
 import DummyImg from '@/public/image/dummy/primaryPhoto.jpg';
+import CosmosProfileTabProps from "./tab/tab";
 
 export default function CosmosPageProfile() {
     return (
@@ -36,6 +37,11 @@ export default function CosmosPageProfile() {
                         accountName="정태욱"
                     />
                 </div>
+                <div className={styles.visitorContainer}>
+                    <span className={styles.visitor} style={{ marginRight: '20px' }}><strong>오늘 방문자</strong>1,252</span>
+                    <span className={styles.visitor}><strong>총 방문자</strong>1,920,827</span>
+                </div>
+                <CosmosProfileTabProps />
             </div>
         </section>
     );

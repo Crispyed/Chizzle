@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import 'react-toastify/dist/ReactToastify.css';
+import RecoilRootWrapper from "@/lib/recoilRoot";
 
 export const metadata: Metadata = {
     title: "Cosmos - Simply photo frame service",
@@ -34,7 +35,9 @@ export default function RootLayout({
                 <meta name="theme-color" content="#ffffff"/>
             </head>
             <body className="body">
-                {children}
+                <RecoilRootWrapper>
+                    {children}
+                </RecoilRootWrapper>
             </body>
         </html>
     );

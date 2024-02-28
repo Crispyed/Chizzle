@@ -17,6 +17,8 @@
 }
 
 .dataContainer {
+    width: 100%;
+
     margin: 0 auto;
     margin-top: -75px;
 
@@ -64,5 +66,21 @@
 .snsContainer {
     display: flex;
 
+    margin: 15px 0;
+}
+
+.visitorContainer {
     margin: 10px 0;
+}
+
+.visitor {
+    font-family: $font-wanted;
+
+    strong {
+        color: $color-gray;
+
+        margin-right: 6px;
+
+        font-weight: 500;
+    }
 }

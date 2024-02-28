@@ -91,7 +91,9 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
                 </div>
             </section>
             <CosmosPageProfile />
-            <div className="redirectAnimationContainer" style={{ height: '100vh', top: 'auto', bottom: 0 }}/>
+            <div className="redirectAnimationContainer" style={{ height: '100vh', top: 'auto', bottom: 0 }}>
+                
+            </div>
         </main>
     );
 }
