@@ -22,10 +22,6 @@
 
     &:hover {
         background-color: $color-background-hover;
-        .arrow {
-            transform: rotate(45deg);
-            color: $color-gray;
-        }
     }
 }
 
@@ -47,17 +43,4 @@
     font-weight: 500;
 
     margin-top: 2px;
-}
-
-.arrow {
-    width: 25px;
-    height: 25px;
-
-    transform: rotate(-45deg);
-
-    margin-left: 10px;
-
-    color: $color-text-transparent;
-
-    transition: .2s all ease-in-out;
 }

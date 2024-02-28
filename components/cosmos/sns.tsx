@@ -1,6 +1,5 @@
 import styles from "@/styles/cosmos/components/sns.module.scss";
 import Image, { StaticImageData } from "next/image";
-import { IoMdArrowForward } from "react-icons/io";
 
 interface ICosmosPageProfileSNS {
     icon: string | StaticImageData;
@@ -21,7 +20,6 @@ export default function CosmosPageProfileSNS({ icon, snsName, url, accountName }
                 <span className={styles.snsName}>{snsName}</span>
                 <span className={styles.accountName}>{accountName}</span>
             </main>
-            <IoMdArrowForward className={styles.arrow} />
         </a>
     )
 }

@@ -4,13 +4,24 @@ import DummyProfile from '@/public/image/dummy/profile.jpg';
 import Youtube from '@/public/svg/youtube.svg';
 import Instagram from '@/public/svg/instagram.svg';
 import CosmosPageProfileSNS from "./sns";
+import DummyImg from '@/public/image/dummy/primaryPhoto.jpg';
 
 export default function CosmosPageProfile() {
     return (
         <section className={styles.container}>
-            <div className={styles.article}>
-                <span className={styles.title}>소개글</span>
-                <h3 className={styles.description}>Hello, my name is Taeuk, and I am a photographer who takes pictures of the world.</h3>
+            <Image
+                src={DummyImg}
+                alt="Photo Name" //TODO: Edit Static Photo Name
+                className={styles.bannerImage}
+            />
+            <div className={styles.dataContainer}>
+                <Image
+                    src={DummyProfile}
+                    alt="profile" //TODO: Edit Static Profile Name
+                    className={styles.profileImage}
+                />
+                <h1 className={styles.displayName}>정태욱</h1>
+                <span className={styles.description}>Hello, my name is Taeuk, and I am a photographer who takes pictures of the world.</span>
                 <div className={styles.snsContainer}>
                     <CosmosPageProfileSNS
                         icon={Youtube}
@@ -26,11 +37,6 @@ export default function CosmosPageProfile() {
                     />
                 </div>
             </div>
-            <Image
-                src={DummyProfile}
-                alt="profile" //TODO: Edit Static Profile Name
-                className={styles.profileImage}
-            />
         </section>
     );
 }
