@@ -16,14 +16,14 @@
     font-family: $font-wanted;
     font-size: 23px;
     letter-spacing: -.5px;
-
+    color : $color-black;
     &:visited {
-        color : black;
+        color: $color-black;
     }
     &:hover {
-        color : black;
+        color: $color-black;
     }
     &:active {
-        color : black
+        color: $color-black;
     }
 }
