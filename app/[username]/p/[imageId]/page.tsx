@@ -61,7 +61,6 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
     useEffect(() => {
         gsap.to('.redirectAnimationContainer', {
             height: '0vh',
-            opacity: 0,
             duration: 1,
             delay: .10,
             ease: "power2.out",
