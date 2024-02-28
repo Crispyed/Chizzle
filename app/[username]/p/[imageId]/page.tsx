@@ -15,6 +15,7 @@ import { FaRunning } from "react-icons/fa";
 import { RiCameraLensFill } from "react-icons/ri";
 import { MdOutlineLensBlur } from "react-icons/md";
 import { MdPhotoSizeSelectLarge } from "react-icons/md";
+import CosmosLogo from "@/components/logo";
 
 interface CameraDetailProps {
     username: string;
@@ -60,6 +61,7 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
     useEffect(() => {
         gsap.to('.redirectAnimationContainer', {
             height: '0vh',
+            opacity: 0,
             duration: 1,
             delay: .10,
             ease: "power2.out",
@@ -75,7 +77,6 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
                         alt="image name"
                         className={styles.image}
                     />
-                    <span className={styles.adTitle}>이런 제품은 어떠신가요?</span>
                 </div>
                 <div className={styles.imageDetailContainer}>
                     <div className={styles.imageTypeContainer}>PHOTO</div>
@@ -90,10 +91,7 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
                     <span className={styles.imageDetail}>1,920 Views</span>
                 </div>
             </section>
-            <CosmosPageProfile />
-            <div className="redirectAnimationContainer" style={{ height: '100vh', top: 'auto', bottom: 0 }}>
-                
-            </div>
+            <div className="redirectAnimationContainer" style={{ height: '100vh', top: 'auto', bottom: 0 }} />
         </main>
     );
 }

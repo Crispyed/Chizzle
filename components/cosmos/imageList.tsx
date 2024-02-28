@@ -12,6 +12,7 @@ import dummy_7 from '@/public/image/dummy/photo_7.jpg';
 import dummy_8 from '@/public/image/dummy/photo_8.jpg';
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
+import CosmosLogo from "../logo";
 
 interface ImageComponentProps {
     src: string | StaticImageData;
@@ -94,7 +95,7 @@ export default function CosmosPageImageList({ slug }: { slug: string }) {
                 slug={slug}
                 id="6CHeuCJ9I"
             />
-            <div className="redirectAnimationContainer"/>
+            <div className="redirectAnimationContainer" />
         </section>
     );
 }
