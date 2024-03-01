@@ -11,7 +11,7 @@ interface DashboardTabContainerProps {
 }
 
 export default function DashboardTabContainer({ stateName, children, isSmall }: DashboardTabContainerProps) {
-    const [tab, setTab] = useRecoilState(DashboardTabState)
+    const [tab] = useRecoilState(DashboardTabState)
     return (
         <div className={styles.container} data-visible={stateName === tab} data-setting={isSmall}>
             {children}
