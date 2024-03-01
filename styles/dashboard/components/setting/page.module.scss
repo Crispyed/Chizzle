@@ -1,0 +1,106 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+    width: calc(100% - 40px);
+
+    padding: 20px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: $font-wanted;
+    font-size: 18px;
+    font-weight: 600;
+    
+    color: $color-black;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    
+    margin: 0;
+    margin-top: 25px;
+    
+    background-color: $color-border;
+
+    border: 0px;
+}
+
+.sectionContainer {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionValueContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionTitle {
+    font-family: $font-wanted;
+    font-size: 14px;
+    
+    color: $color-gray;
+}
+
+.sectionValue {
+    font-family: $font-wanted;
+    font-size: 16px;
+
+    margin-top: 5px;
+    
+    color: $color-black;
+}
+
+.sectionButton {
+    font-family: $font-wanted;
+    font-size: 14px;
+    
+    color: $color-blue;
+    background-color: $color-white;
+    
+    padding: 8px 10px;
+
+    border: 0;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-blue-transparent;
+    }
+}
+
+.primaryButton {
+    font-family: $font-wanted;
+    font-size: 14px;
+    
+    color: $color-white;
+    background-color: $color-blue;
+    
+    padding: 10px 15px;
+
+    border: 0;
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-blue-hover;
+    }
+}

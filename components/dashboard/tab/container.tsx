@@ -7,12 +7,13 @@ import { DashboardTabState } from "@/states/dashboardTab";
 interface DashboardTabContainerProps {
     stateName: string;
     children?: React.ReactNode;
+    isSmall?: boolean;
 }
 
-export default function DashboardTabContainer({ stateName, children }: DashboardTabContainerProps) {
+export default function DashboardTabContainer({ stateName, children, isSmall }: DashboardTabContainerProps) {
     const [tab, setTab] = useRecoilState(DashboardTabState)
     return (
-        <div className={styles.container} data-visible={stateName === tab}>
+        <div className={styles.container} data-visible={stateName === tab} data-setting={isSmall}>
             {children}
         </div>
     );
