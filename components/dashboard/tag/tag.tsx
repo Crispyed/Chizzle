@@ -1,5 +1,3 @@
-'use client'
-
 import style from '@/styles/dashboard/components/tag/page.module.scss'
 
 function TagItem() {}

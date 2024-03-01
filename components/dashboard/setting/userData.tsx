@@ -1,5 +1,3 @@
-'use client'
-
 import style from '@/styles/dashboard/components/setting/page.module.scss'
 
 export default function DashboardSettingUserData() {
