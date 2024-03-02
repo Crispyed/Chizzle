@@ -9,7 +9,7 @@ export function Header({ slug }: { slug: string }) {
                 <ServiceLogo/>
             </Link>
             <div>
-                <button className={styles.button}>나만의 코스모스 만들기</button>
+                <button className={styles.button}>나만의 블룸 만들기</button>
                 <Link href={'/login'} className={styles.loginButton}>로그인</Link>
             </div>
         </header>

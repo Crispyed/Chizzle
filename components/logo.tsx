@@ -6,7 +6,7 @@ export function ServiceLogo() {
     return (
         <div className={styles.container}>
             <Image src={Logo} alt="logo" className={styles.logoSVG} />
-            <span className={styles.logoName}>Cosmose</span>
+            <span className={styles.logoName}>Bloom</span>
         </div>
     );
 }
