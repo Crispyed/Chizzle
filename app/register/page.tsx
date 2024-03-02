@@ -16,13 +16,13 @@ export default function Login() {
 
     return (
         <main className={styles.container}>
-            <Image src={Logo} alt="Cosmos" width={40} />
-            <h1 className={styles.title}>Cosmos 가입하기</h1>
+            <Image src={Logo} alt="Cosmose" width={40} />
+            <h1 className={styles.title}>Cosmose 가입하기</h1>
             <form className={styles.form} action={formAction}>
                 <label className={styles.label}>이메일</label>
                 <input type="email" id="email" placeholder="name@example.com" className={styles.input} />
-                <label className={styles.label}>Cosmos 이름</label>
-                <input type="text" id="username" placeholder="Cosmos 이름" className={styles.input} />
+                <label className={styles.label}>Cosmose 이름</label>
+                <input type="text" id="username" placeholder="Cosmose 이름" className={styles.input} />
                 <label className={styles.label}>비밀번호</label>
                 <input type="password" id="password" placeholder="비밀번호" className={styles.input} />
                 <label className={styles.label}>비밀번호 확인</label>

@@ -1,10 +1,9 @@
 'use client'
 
-import CosmosPageTitle from "@/components/cosmos/header";
-import styles from "@/styles/cosmos/detail/page.module.scss";
+import { Header } from "@/components/app/header";
+import styles from "@/styles/app/detail/page.module.scss";
 import Image from "next/image";
 import dummy from '@/public/image/dummy/photo_3.jpg';
-import CosmosPageProfile from "@/components/cosmos/profile";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Link from "next/link";
@@ -15,7 +14,6 @@ import { FaRunning } from "react-icons/fa";
 import { RiCameraLensFill } from "react-icons/ri";
 import { MdOutlineLensBlur } from "react-icons/md";
 import { MdPhotoSizeSelectLarge } from "react-icons/md";
-import CosmosLogo from "@/components/logo";
 
 interface CameraDetailProps {
     username: string;
@@ -55,7 +53,7 @@ function CameraDetail({ username, camera, film }: CameraDetailProps) {
     )
 }
 
-export default function CosmosDetailImage({ params }: { params: { username: string } }) {
+export default function ImageDetail({ params }: { params: { username: string } }) {
     const camera = 'Canon EOS 600D';
     const film = 'Kodak Portra 400';
     useEffect(() => {
@@ -68,7 +66,7 @@ export default function CosmosDetailImage({ params }: { params: { username: stri
     }, [])
     return (
         <main className={styles.container}>
-            <CosmosPageTitle slug={params.username} />
+            <Header slug={params.username} />
             <section className={styles.wrap}>
                 <div className={styles.imageContainer}>
                     <Image

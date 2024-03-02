@@ -1,14 +1,14 @@
-import styles from "@/styles/cosmos/components/sns.module.scss";
+import styles from "@/styles/app/components/sns.module.scss";
 import Image, { StaticImageData } from "next/image";
 
-interface ICosmosPageProfileSNS {
+interface IPageProfileSNS {
     icon: string | StaticImageData;
     snsName: string;
     url: string;
     accountName: string;
 }
 
-export default function CosmosPageProfileSNS({ icon, snsName, url, accountName }: ICosmosPageProfileSNS) {
+export function PageProfileSNS({ icon, snsName, url, accountName }: IPageProfileSNS) {
     return (
         <a className={styles.container} href={url} target="_blank">
             <Image

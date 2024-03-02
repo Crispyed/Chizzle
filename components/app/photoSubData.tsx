@@ -1,12 +1,12 @@
-import styles from "@/styles/cosmos/components/photoSubData.module.scss";
+import styles from "@/styles/app/components/photoSubData.module.scss";
 import Image, { StaticImageData } from "next/image";
 
-interface ICosmosPageProfileSNS {
+interface IPagePhotoSubData {
     lastUploadDate: string;
     imageCount: number;
 }
 
-export default function CosmosPagePhotoSubData({ lastUploadDate, imageCount }: ICosmosPageProfileSNS) {
+export function PagePhotoSubData({ lastUploadDate, imageCount }: IPagePhotoSubData) {
     return (
         <div className={styles.container}>
             <span>마지막 포스팅 - {lastUploadDate}</span>

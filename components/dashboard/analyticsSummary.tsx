@@ -18,7 +18,7 @@ function Card({ title, value, prefix }: CardProps) {
     );
 }
 
-export default function DashboardAnalyticsSummary() {
+export function DashboardAnalyticsSummary() {
     return (
         <section className={styles.container}>
             <Card

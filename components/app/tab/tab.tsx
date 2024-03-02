@@ -1,13 +1,13 @@
 'use client'
 
-import styles from "@/styles/cosmos/components/tab/tab.module.scss";
+import styles from "@/styles/app/components/tab/tab.module.scss";
 import { MdOutlinePhotoSizeSelectActual } from "react-icons/md";
 import { FaTag } from "react-icons/fa6";
 import { useRecoilState } from "recoil";
-import { cosmosProfileTab } from "@/states/cosmosProfileTab";
+import { RecoilProfileTab } from "@/states/profileTab";
 
-export default function CosmosProfileTab() {
-    const [tab, setTab] = useRecoilState(cosmosProfileTab)
+export function ProfileTabContainer() {
+    const [tab, setTab] = useRecoilState(RecoilProfileTab)
     return (
         <div className={styles.tabContainer}>
             <div className={styles.tabItem} data-selected={tab === 'photo'} onClick={() => {

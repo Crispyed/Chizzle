@@ -39,7 +39,7 @@ function List({ title }: PostListProps) {
     );
 }
 
-export default function DashboardPostList() {
+export function DashboardPostList() {
     return (
         <section>
             <List

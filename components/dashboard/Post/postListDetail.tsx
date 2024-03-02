@@ -11,7 +11,7 @@ interface PostListDetail {
     showUnderlineWhileHover?: boolean;
 }
 
-export default function DashboardPostListDetail({ icon, value, showUnderlineWhileHover, isTag }: PostListDetail) {
+export function DashboardPostListDetail({ icon, value, showUnderlineWhileHover, isTag }: PostListDetail) {
     const [tab, setTab] = useRecoilState(DashboardTabState)
     return (
         <div className={style.listDetailContainer} data-underline={showUnderlineWhileHover} onClick={() => {

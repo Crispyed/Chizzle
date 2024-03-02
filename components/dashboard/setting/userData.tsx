@@ -1,6 +1,6 @@
 import style from '@/styles/dashboard/components/setting/page.module.scss'
 
-export default function DashboardSettingUserData() {
+export function DashboardSettingUserData() {
     return (
         <section className={style.container}>
             <span className={style.title}>아티스트 정보</span>

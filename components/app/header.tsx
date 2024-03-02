@@ -1,12 +1,12 @@
-import styles from "@/styles/cosmos/components/header.module.scss";
+import styles from "@/styles/app/components/header.module.scss";
 import Link from "next/link";
-import CosmosLogo from "../logo";
+import { ServiceLogo } from "../logo";
 
-export default function CosmosPageHeader({ slug }: { slug: string }) {
+export function Header({ slug }: { slug: string }) {
     return (
         <header className={styles.container}>
             <Link href={`/${slug}`} className={styles.titleContainer}>
-                <CosmosLogo/>
+                <ServiceLogo/>
             </Link>
             <div>
                 <button className={styles.button}>나만의 코스모스 만들기</button>

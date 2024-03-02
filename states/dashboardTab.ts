@@ -1,8 +1,8 @@
 import { atom } from 'recoil';
 
-const DashboardTabState = atom({
+const RecoilDashboardTabState = atom({
   key: 'DashboardTab',
   default: 'tag',
 });
 
-export { DashboardTabState };
+export { RecoilDashboardTabState };

@@ -1,15 +1,15 @@
 'use client'
 
-import styles from "@/styles/cosmos/components/tab/tab.module.scss";
+import styles from "@/styles/app/components/tab/tab.module.scss";
 import { useRecoilState } from "recoil";
-import { DashboardTabState } from "@/states/dashboardTab";
+import { RecoilDashboardTabState } from "@/states/dashboardTab";
 import { GoHomeFill } from "react-icons/go";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { IoMdSettings } from "react-icons/io";
 import { FaTag } from "react-icons/fa";
 
-export default function DashboardTab() {
-    const [tab, setTab] = useRecoilState(DashboardTabState)
+export function DashboardTab() {
+    const [tab, setTab] = useRecoilState(RecoilDashboardTabState)
     return (
         <div className={styles.tabContainer}>
             <div className={styles.tabItem} data-selected={tab === 'home'} onClick={() => {

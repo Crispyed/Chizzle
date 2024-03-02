@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "@/styles/cosmos/components/image.module.scss";
+import styles from "@/styles/app/components/image.module.scss";
 import Image, { StaticImageData } from "next/image";
 import dummy_1 from '@/public/image/dummy/photo_1.jpg';
 import dummy_2 from '@/public/image/dummy/photo_2.jpg';
@@ -12,7 +12,6 @@ import dummy_7 from '@/public/image/dummy/photo_7.jpg';
 import dummy_8 from '@/public/image/dummy/photo_8.jpg';
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
-import CosmosLogo from "../logo";
 
 interface ImageComponentProps {
     src: string | StaticImageData;
@@ -44,7 +43,7 @@ function ImageComponent({ src, title, slug, id }: ImageComponentProps) {
     )
 }
 
-export default function CosmosPageImageList({ slug }: { slug: string }) {
+export function PageImageList({ slug }: { slug: string }) {
     return (
         <section className={styles.container}>
             <ImageComponent
