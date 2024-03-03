@@ -29,8 +29,8 @@ export default function Login() {
 
     return (
         <main className={styles.container}>
-            <Image src={Logo} alt="Cosmose" width={40} />
-            <h1 className={styles.title}>Cosmose 로그인</h1>
+            <Image src={Logo} alt="chizzle" width={40} />
+            <h1 className={styles.title}>chizzle 로그인</h1>
             <form className={styles.form} action={formAction}>
                 <label className={styles.label}>이메일</label>
                 <input type="email" placeholder="name@example.com" className={styles.input} />

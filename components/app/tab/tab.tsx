@@ -6,7 +6,7 @@ import { FaTag } from "react-icons/fa6";
 import { useRecoilState } from "recoil";
 import { RecoilProfileTab } from "@/states/profileTab";
 
-export function ProfileTabContainer() {
+export function ProfileTab() {
     const [tab, setTab] = useRecoilState(RecoilProfileTab)
     return (
         <div className={styles.tabContainer}>

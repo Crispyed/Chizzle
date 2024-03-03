@@ -1,10 +1,10 @@
 import styles from "@/styles/app/components/profile.module.scss";
 import Image from "next/image";
-import DummyProfile from '@/public/image/dummy/profile.jpg';
+import DummyProfile from '@/public/image/dummy/profile2.jpg';
 import Youtube from '@/public/svg/youtube.svg';
 import Instagram from '@/public/svg/instagram.svg';
 import { PageProfileSNS } from "./sns";
-import DummyImg from '@/public/image/dummy/primaryPhoto.jpg';
+import DummyImg from '@/public/image/dummy/primaryPhoto2.jpg';
 
 export function PageProfile() {
     return (

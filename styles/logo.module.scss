@@ -10,20 +10,29 @@
 
     width: 30px;
     height: 30px;
+
+    svg {
+        color: $color-white;
+    }
 }
 
 .logoName {
     font-family: $font-wanted;
     font-size: 23px;
+
     letter-spacing: -.5px;
-    color : $color-black;
+
+    color : $color-white;
+
     &:visited {
-        color: $color-black;
+        color: $color-white;
     }
+
     &:hover {
-        color: $color-black;
+        color: $color-white;
     }
+
     &:active {
-        color: $color-black;
+        color: $color-white;
     }
 }
